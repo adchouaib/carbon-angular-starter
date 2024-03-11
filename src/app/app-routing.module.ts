@@ -15,6 +15,7 @@ const routes: Routes = [
 			import("./features/authentication/authentication.module").then(
 				(m) => m.AuthenticationModule,
 			),
+		data: { showHeader: false, showFooter: false, showSidebar: false },
 	},
 ];
 
