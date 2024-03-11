@@ -1,0 +1,80 @@
+@import "carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family";
+@import "carbon-components/scss/globals/scss/typography";
+
+:host {
+	display: flex;
+	justify-content: center;
+}
+
+.auth-login {
+	margin: auto;
+	width: 30rem;
+	background: var(--cds-layer);
+	padding: $spacing-10;
+}
+
+.auth-login__title {
+	@include type-style("expressive-heading-06");
+	margin-bottom: $spacing-03;
+}
+
+.app-form {
+	margin: $spacing-08 0px;
+}
+
+.app-form__item {
+	margin-bottom: $spacing-04;
+}
+
+.auth-login__form-button {
+	width: 100% !important;
+	max-inline-size: unset;
+}
+
+.app-form__item--opts-actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.app-form__other-login {
+	margin-top: $spacing-08;
+	display: flex;
+	gap: $spacing-03;
+	width: 100%;
+	& button {
+		flex: 1;
+	}
+}
+
+.app-separator {
+	position: relative;
+	display: flex;
+	align-items: center;
+
+	&:before {
+		content: "";
+		display: block;
+		flex: 1;
+		height: 1px;
+		background-color: gray;
+		opacity: 0.7;
+		margin-right: 0.75rem;
+	}
+
+	&.app-separator--left {
+		&:before {
+			display: none;
+		}
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		flex: 1;
+		height: 1px;
+		background-color: gray;
+		opacity: 0.7;
+		margin-left: 0.75rem;
+	}
+}
